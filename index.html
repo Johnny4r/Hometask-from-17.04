@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- посилання -->
+	<link rel="stylesheet" href="styles.css"> 
+    <!-- посилання -->
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <!-- посилання -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <!-- посилання -->
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- назва сайту в браузері -->
+	<title>HTML</title>
+</head>
+<!-- тіло сайту -->
+<body>
+	<!--Це наш коментар-->
+    <!-- div - для того щоб відділити частину коду та щоб назначити атрибути для частини коду -->
+<div class="container">
+    <!-- навігація -->
+	<nav>
+        <!-- маркований список -->
+		<ul>
+            <!-- li - елементи списку -->
+			<li>
+				<a href="#">Home</a>
+			</li>
+			<li>
+				<a href="#">About</a>
+			</li>
+			<li>
+				<a href="#">Contacts</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="header-block">
+        <!-- заголовки -->
+		<h1>H1 tag</h1>
+		<h2>H2 tag</h2>
+	</div>
+	<h3>H3 tag</h3>
+	<h4>H4 tag</h4>
+	<h5>H5 tag</h5>
+	<h6>H6 tag</h6>
+    <!-- горизонтальна лінія -->
+	<hr>
+    <!-- p - абзац, br - новий рядок, strong - жирний текст, i - курсив, small - менший шрифт -->
+	<p>Lorem ipsum dolor <br>sit amet <strong>consectetur adipisicing elit.</strong> <i>Cumque minus</i> quia dolores <small>consequatur</small>. Id, nemo.</p>
+    <!-- посилання -->
+	<a target="_blank" href="https://www.youtube.com/">This is link</a><br>
+    <!-- посилання для скачування -->
+	<a download href="files/modern-css.pdf">PDF Modern CSS</a><br>
+    <!-- посилання для телефону -->
+	<a href="tel:+380661037873">+38066-103-78-73</a><br>
+    <!-- посилання для пошти -->
+	<a href="mailto:example@mail.com">E-mail</a><br>
+    <!-- посилання на скайп -->
+	<a href="skype:dexter1902?call">Skype</a><br>
+    <!-- вставка картинки (alt - текст на місці картинки при помилці завантаження картинки) -->
+	<img src="files/img.jpg" alt="music man">
+	<!-- таблиця -->
+	<table>
+        <!-- заголовки таблиці -->
+		<thead>
+			<tr>
+				<th>№</th>
+				<th>Ім'я товару</th>
+				<th>Одиниці виміру</th>
+				<th>Кількість</th>
+				<th>Ціна за одиницю</th>
+				<th>Сума</th>
+			</tr>
+		</thead>
+        <!-- нижня чатина таблиці -->
+		<tfoot>
+			<tr>
+				<td class="footer-col" colspan="5">Всього:</td><td>440 грн.</td>
+			</tr>
+		</tfoot>
+        <!-- тіло таблиці -->
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Банани</td>
+				<td>Кг.</td>
+				<td>40</td>
+				<td>80 грн</td>
+				<td>80 грн</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Манго</td>
+				<td>Кг.</td>
+				<td>10</td>
+				<td>180 грн</td>
+				<td>360 грн</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<ul>
+		<div>Маркований список</div>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<ul>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<ul>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+			</ul>
+		</ul>
+	</ul>
+    <!-- нумерований список -->
+	<ol>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JS</li>
+	</ol>
+    <!-- поняття та його значення -->
+	<dl>
+        <!-- поняття -->
+		<dt>Власник фейсбук:</dt>
+        <!-- значення -->
+			<dd>Марк Цукерберг</dd>
+		<dt>Власник Амазон:</dt>
+			<dd>Джеф Безос</dd>
+			<dd>Джеф Безос</dd>
+			<dd>Джеф Безос</dd>
+			<dd>Джеф Безос</dd>
+	</dl>
+
+	<a href="mailto:example@.com">&#128386;example@.com</a>
+    <!-- маленькі зображення -->
+	<div>&#9749;</div>
+</div>
+
+<!-- <header>
+	<div>Logo</div>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Portfolio</a></li>
+		</ul>
+	</nav>
+</header>
+
+<main>
+	<aside>Sidebar</aside>
+	<section>
+		<article>Article1</article>
+		<article>Article2</article>
+		<article>Article3</article>
+	</section>
+</main>
+
+<footer>
+	footer
+</footer> -->
+<hr>
+<!-- заповнення форми -->
+<form action="">
+	<div><label>Your name: <input type="text" value="Nick"></label></div>
+	<div><label>Telephone: <input type="tel"></label></div>
+	<div><label>Email Address: <input type="email"></label></div>
+	<fieldset>
+		<legend>Sushi Size</legend>
+		<div><label>Small set: <input required type="radio"></label></div>
+		<div><label>Medium set: <input required  type="radio"></label></div>
+		<div><label>Big set: <input required  type="radio"></label></div>
+		<div><label>Very Big set: <input required type="radio"></label></div>
+	</fieldset>
+	<fieldset>
+		<legend>Sushi Topping</legend>
+		<div><label>Small set: <input required type="checkbox"></label></div>
+		<div><label>Medium set: <input required  type="checkbox"></label></div>
+		<div><label>Big set: <input required  type="checkbox"></label></div>
+		<div><label>Very Big set: <input required type="checkbox"></label></div>
+	</fieldset>
+	<div><label>Delivery time: <input min="11:00" max="21:00" required type="time"></label></div>
+	<button>Send</button>
+</form>
+
+</body>
+</html>
